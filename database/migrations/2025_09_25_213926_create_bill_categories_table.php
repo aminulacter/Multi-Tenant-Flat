@@ -16,7 +16,10 @@ return new class extends Migration
             $table->string('name');
             $table->string('description')->nullable();
             $table->unsignedBigInteger('building_owner_id');
-            $table->foreign('building_owner_id')->references('id')->on('house_owners')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('building_owner_id')
+            ->references('id')->on('house_owners')
+            ->onDelete('cascade')
+            ->onUpdate('cascade');
             $table->timestamps();
         });
     }
