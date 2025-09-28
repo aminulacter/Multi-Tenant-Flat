@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import AppLayout from '@/layouts/AppLayout.vue';
-import { dashboard } from '../../routes';
-import { index as buildings } from '../../routes/buildings';
+import { dashboard } from '@/routes';
+import { index as buildings } from '@/routes/buildings';
 import { type BreadcrumbItem, type HouseOwner } from '@/types';
 import { Head, Link, router, usePage } from '@inertiajs/vue3';
 import { ref } from 'vue';

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import AppLayout from '@/layouts/AppLayout.vue';
-import { dashboard } from '../../routes';
-import { index as buildings, create as createBuilding } from '../../routes/buildings';
+import { dashboard } from '@/routes';
+import { index as buildings, create as createBuilding } from '@/routes/buildings';
 import { type BreadcrumbItem } from '@/types';
 import { Head, Link, router } from '@inertiajs/vue3';
 import { ref, onMounted } from "vue";
