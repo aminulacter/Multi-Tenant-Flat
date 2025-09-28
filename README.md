@@ -390,3 +390,4 @@ For support and questions:
 - Vue 3 + TypeScript frontend
 - Laravel 12 backend
 - Complete CRUD operations for all entities
+- Hosted at http://flat-management.pidinternational.com.bd/

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import ProfileController from '@/actions/App/Http/Controllers/Settings/ProfileController';
 import { edit } from '@/routes/profile';
-import { send } from '@/routes/verification';
+// import { send } from '@/routes/verification';
 import { Form, Head, Link, usePage } from '@inertiajs/vue3';
 
 import DeleteUser from '@/components/DeleteUser.vue';
@@ -78,7 +78,7 @@ const user = page.props.auth.user;
                     </div>
 
                     <div v-if="mustVerifyEmail && !user.email_verified_at">
-                        <p class="-mt-4 text-sm text-muted-foreground">
+                        <!-- <p class="-mt-4 text-sm text-muted-foreground">
                             Your email address is unverified.
                             <Link
                                 :href="send()"
@@ -87,7 +87,7 @@ const user = page.props.auth.user;
                             >
                                 Click here to resend the verification email.
                             </Link>
-                        </p>
+                        </p> -->
 
                         <div
                             v-if="status === 'verification-link-sent'"
